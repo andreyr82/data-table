@@ -61,6 +61,8 @@ function App() {
         setData(result.data);
         setPagesCount(result.pagesCount);
         setFilterValues(result.filterValues);
+      })
+      .finally(() => {
         setLoading(false);
       })
   }
