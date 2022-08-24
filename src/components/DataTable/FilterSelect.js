@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-const FilterSelect = memo(({ value, filterValues, onChange }) => {
+const FilterSelect = memo(({ value='', filterValues, onChange }) => {
   return (
     <select className="form-select" value={value} onChange={event => onChange(event.target.value)}>
       <option value=''>---</option>
@@ -14,6 +14,6 @@ const FilterSelect = memo(({ value, filterValues, onChange }) => {
       )}
     </select>
   )
-})
+});
 
 export default FilterSelect;
